@@ -5,7 +5,7 @@ import { connectDB } from './db.js';
 import cors from 'cors';
 
 app.use(cors())
-app.use(cors({origin: 'http://localhost:5173'}));
+app.use(cors({origin: '*'}));
 
 app.use(express.json());
 express.urlencoded({extended:true});
